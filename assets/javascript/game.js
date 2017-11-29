@@ -24,9 +24,9 @@ document.onkeyup = function(event) {
 
 	var userGuess = event.key;
 	var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
-	
+
 /*	console.log(userGuess);*/
-	guessesSoFar.push(userGuess)
+	guessesSoFar.push(userGuess);
 /*	console.log(guessesSoFar);*/
 
 	if ((userGuess === computerGuess)) {
@@ -43,13 +43,13 @@ document.onkeyup = function(event) {
 			losses++;
 			reset();
 
-	}
 
+	}
 	var html = 
-		"<p><h3>Guess what letter I\'m thinking of</h4></p>" + 
-		"<p><h3>Wins: " + wins + "</h4></p>" + 
-		"<p><h3>Losses: " + losses + "</h4></p>" + 
-		"<p><h3>Guesses Left: " + guesses + "</h4></p>" + 
+		"<p><h3>Guess what letter I\'m thinking of</h3></p>" + 
+		"<p><h3>Wins: " + wins + "</h3></p>" + 
+		"<p><h3>Losses: " + losses + "</h3></p>" + 
+		"<p><h3>Guesses Left: " + guesses + "</h3></p>" + 
 		"<p><h3>Guesses made so far: " + guessesSoFar + "</h4></p>";
 
 
